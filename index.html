@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Callacos</title>
+    
+    <!-- Méta données SEO -->
+    <meta name="description" content="CV et portfolio de Callacos, développeur web. Découvrez mes projets et compétences.">
+	<meta name="author" content="Callacos">
+    <meta name="keywords" content="callacos, cratere, esteban, développeur, cv, expérience, portfolio, projets, compétences">
+	<meta name="robots" content="index, follow">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon/favicon1.png" type="image/x-icon">
+    
+    <!-- Préchargement des assets critiques -->
+    <link rel="preload" href="/css/index.css" as="style">
+    <link rel="preload" href="/js/main.js" as="script">
+    
+    <!-- CSS initial (critical CSS) -->
+    <style>
+        /* Insérer ici le CSS critique pour le rendu initial */
+        body { margin: 0; font-family: Arial, sans-serif; }
+        .app { min-height: 100vh; display: flex; flex-direction: column; }
+    </style>
+    
+    <!-- CSS asynchrone -->
+    <link rel="stylesheet" href="/css/index.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/css/index.css"></noscript>
+</head>
+<body>
+    <div id="app" class="app">
+        <!-- Le contenu généré par le serveur sera injecté ici -->
+        <!-- <%= htmlWebpackPlugin.options.SSR_CONTENT %> -->
+        
+        <!-- Fallback pour le chargement côté client -->
+        <noscript>
+            <p>Veuillez activer JavaScript pour une expérience optimale.</p>
+        </noscript>
+    </div>
+    
+    <!-- Données hydratation pour le client -->
+    <script id="ssr-data" type="application/json">
+        <%= htmlWebpackPlugin.options.SSR_DATA %>
+    </script>
+    
+    <!-- Chargement asynchrone du JS -->
+    <script src="/js/main.js" defer></script>
+</body>
+</html>
