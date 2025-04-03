@@ -1,0 +1,59 @@
+body {
+	background-color: black;
+}
+
+header{
+	background-image: url("image/header.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100px;
+	color: rgb(241, 245, 241);
+	padding: 10px;
+	text-align: center;
+	margin: 0px;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+#typing-effect {
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid red; /* Curseur */
+    display: inline-block;
+    animation: blink 0.7s infinite;
+}
+
+nav {
+	background-color: rgba(0, 0, 0, 0.589);
+	margin: 0 auto; /* Centre le bloc horizontalement */
+	width: fit-content; /* S'adapte au contenu du menu */
+	max-width: 100%; /* Empêche de dépasser l'écran */
+	padding: 10px 0; /* Espacement vertical si besoin */
+  }
+  
+  nav ul {
+	font-size: large;
+	display: flex;
+	justify-content: center;
+	gap: 20px; /* Espacement entre les éléments du menu */
+	padding: 0;
+	margin: 0;
+	list-style: none;
+  }
+
+  nav ul li a {
+    color: red !important; /* Force la couleur rouge */
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+nav ul li a:visited,
+nav ul li a:active,
+nav ul li a:hover {
+    color: rgb(253, 65, 32)  !important; /* Assure que la couleur reste rouge */
+}
