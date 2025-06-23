@@ -42,4 +42,6 @@ Tools:         Git, GitHub, Docker, VSCode
 
 ---
 
-<!-- GitHub Stats -->
+![Callacos's GitHub stats](https://github-readme-stats.vercel.app/api?username=Callacos&show_icons=true&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Callacos&layout=compact&theme=radical)
+
