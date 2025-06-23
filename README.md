@@ -39,9 +39,9 @@ Languages:     Python, JavaScript, HTML/CSS, SQL, C
 Frameworks:    Flask, Node.js, Express
 Databases:     SQLite, MySQL
 Tools:         Git, GitHub, Docker, VSCode
-
----
 ```
+---
+
 
 ![Callacos's GitHub stats](https://github-readme-stats.vercel.app/api?username=Callacos&show_icons=true&theme=radical)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Callacos&layout=compact&theme=radical)
